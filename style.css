@@ -1,59 +1,114 @@
 * {
-box-sizing: border-box;
-margin: 0;
-padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-background-color: #f0f0f0;
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .frame {
-width: 390px;
-height: 844px;
-position: relative;
-overflow: hidden;
-font-family: 'Roboto', sans-serif;
+  width: 390px;
+  height: 844px;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
 }
 
 .background {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
 }
 
-.top-block {
-height: 220px;
-background-color: #F6F1E8;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
+.top-block,
 .bottom-block {
-height: calc(100% - 220px);
-background-color: #C2D8E6;
+  width: 100%;
+}
+
+.style-1 .top-block {
+  height: 220px;
+  background-color: #F2F1ED;
+}
+.style-1 .bottom-block {
+  height: 624px;
+  background-color: #C2D8E6;
+}
+
+.style-2 .top-block {
+  height: 370px;
+  background-color: #C2D8E6;
+}
+.style-2 .bottom-block {
+  height: 474px;
+  background-color: #F2F1ED;
+}
+
+.style-3 .top-block {
+  height: 624px;
+  background-color: #F2F1ED;
+  
+}
+.style-3 .bottom-block {
+  height: 220px;
+  background-color: #9FB992;
+}
+
+.style-4 .top-block {
+  height: 624px;
+  background-color: #F2F1ED;
+}
+.style-4 .bottom-block {
+  height: 220px;
+  background-color: #C2D8E6;
+}
+
+.style-5 .top-block {
+  height: 260px;
+  background-color: #C2D8E6;
+}
+.style-5 .bottom-block {
+  height: 584px;
+  background-color: #F2F1ED;
+}
+
+.style-6 .top-block {
+  height: 624px;
+  background-color: #EAE0D0;
+}
+.style-6 .bottom-block {
+  height: 220px;
+  background-color: #F2F1ED;
 }
 
 .logo {
-width: 258px;
-height: 46px;
-object-fit: contain;
+  width: 258px;
+  height: 46px;
+  object-fit: contain;
 }
 
 .illustration {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-object-fit: cover;
-z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.style-1 .top-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
