@@ -6,14 +6,30 @@
   <title>Reclaim</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Serif+Pro:wght@700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
-<body>
+<body class="page-login">
   <div class="frame">
     <div class="background style-2">
       <div class="top-block"></div>
       <div class="bottom-block"></div>
     </div>
     <img src="assets/man-reading-book-2.png" alt="" class="illustration" />
+    <div class="content gap-16">
+      <div class="brand-wrapper">
+        <h1 class="heading">Welcome to</h1>
+        <img src="assets/logo.png" alt="Reclaim logo" class="logo logo-onboarding mt-8" />
+      </div>
+      <p class="intro">Let’s begin your journey to reclaim your quiet moments.</p>
+      <div class="agreement">
+        <label>
+          <input type="checkbox" id="agreeCheckbox" />
+          I agree to Reclaim’s <a href="#">Terms & Conditions</a> and acknowledge the <a href="#">Privacy Policy</a>.
+        </label>
+      </div>
+      <button class="button" id="createAccountBtn">Create an account</button>
+      <button class="button" id="loginBtn">Log in</button>
+    </div>
   </div>
 </body>
 </html>
