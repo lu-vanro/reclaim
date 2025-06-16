@@ -6,24 +6,21 @@
   <title>Reclaim</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Serif+Pro:wght@700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
   <script src="script.js" defer></script>
 </head>
 <body>
   <div class="frame">
-    <div class="top-text-container">
-      <img src="assets/read-a-book-text.png" alt="Read a book" class="header-image" />
-      <p class="sans-serif-text">
-        There’s no right length for rest. What matters is noticing when you need it and making space for it, in whatever way you can.
-      </p>
-    </div>
+    <canvas id="confetti-canvas"></canvas>
 
     <div class="background style-6">
       <div class="top-block"></div>
       <div class="bottom-block"></div>
-    </div>
-    <img src="assets/man-reading-book.png" alt="" class="illustration" />
 
-    <button class="round-button">Start resting</button>
+      <div class="centre-circle">
+        <span class="circle-text">Done!</span>
+      </div>
+    </div>
 
     <div class="nav-bar">
       <a href="homepage.html" class="nav-item">
