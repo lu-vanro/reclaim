@@ -6,18 +6,20 @@
   <title>Reclaim</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Serif+Pro:wght@700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
   <script src="script.js" defer></script>
 </head>
 <body class="page-signup">
   <div class="frame">
-    <div class="background style-7">
+    <canvas id="confetti-canvas"></canvas>
+    <div class="solid-background">
       <div class="top-block"></div>
       <div class="bottom-block centered-button-container">
-      <p>Thank you for signing up to our mailing list!</p>
-      <p>Please wait to be redirected.</p>
-      <div id="loading-spinner" class="spinner"></div>
+        <p>Thank you for signing up to our mailing list!</p>
+        <p>Please wait to be redirected.</p>
+        <div id="loading-spinner" class="spinner"></div>
+      </div>
     </div>
-    <img src="assets/man-reading-book-2.png" alt="" class="illustration" />
   </div>
 </body>
 </html>

@@ -104,10 +104,7 @@ text-decoration: underline;
 margin-right: 8px;
 }
 
-.brand-wrapper,
-.centered-button-container,
-.content,
-.top-text-container {
+.brand-wrapper, .centered-button-container, .content, .top-text-container {
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -187,8 +184,7 @@ flex-direction: column;
 z-index: 0;
 }
 
-.top-block,
-.bottom-block {
+.top-block, .bottom-block {
 width: 100%;
 position: relative;
 z-index: 0;
@@ -463,8 +459,7 @@ height: 24px;
 margin-bottom: 4px;
 }
 
-.option,
-.nav-item {
+.option, .nav-item {
 text-decoration: none;
 color: inherit;
 }
@@ -591,8 +586,8 @@ margin-bottom: 24px !important;
 .page-signup .bottom-block.centered-button-container {
 display: flex;
 flex-direction: column;
-align-items: flex-start;
-justify-content: flex-start;
+align-items: center;
+justify-content: center;
 text-align: left;
 padding: 40px 24px 24px 24px;
 gap: 20px;
@@ -601,15 +596,11 @@ box-sizing: border-box;
 color: #4C3D67;
 }
 
-.page-signup .bottom-block.centered-button-container p,
-.page-signup .bottom-block.centered-button-container label,
-.page-signup .bottom-block.centered-button-container .serif-text,
-.page-signup .bottom-block.centered-button-container .sans-serif-text {
+.page-signup .bottom-block.centered-button-container p, .page-signup .bottom-block.centered-button-container label, .page-signup .bottom-block.centered-button-container .serif-text, .page-signup .bottom-block.centered-button-container .sans-serif-text {
 color: #4C3D67;
 }
 
-.page-signup input[type="text"],
-.page-signup input[type="email"] {
+.page-signup input[type="text"], .page-signup input[type="email"] {
 background-color: transparent;
 color: #4C3D67;
 border: 2px solid #4C3D67;

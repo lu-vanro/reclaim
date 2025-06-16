@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-if (window.location.pathname.includes('done.html')) {
+if (window.location.pathname.includes('done.html') || window.location.pathname.includes('mailing-list-thank-you.html')) {
   window.addEventListener('load', () => {
     const confettiCanvas = document.getElementById('confetti-canvas');
     if (confettiCanvas) {
@@ -130,19 +130,30 @@ if (window.location.pathname.includes('done.html')) {
         resize: true,
         useWorker: true,
       });
-      
+
       myConfetti({
-        particleCount: 800,
+        particleCount: 300,
         spread: 200,
         origin: { x: 0.5, y: 0.6 },
         colors: ['#839A6B', '#D16B5C', '#4C3D67', '#C2D8E6'],
       });
-      
+
+      const redirectTo = window.location.pathname.includes('done.html')
+        ? 'homepage.html'
+        : 'log-in-create-account.html';
+
       setTimeout(() => {
-        window.location.href = 'homepage.html';
-      }, 4000);
+        window.location.href = redirectTo;
+      }, 5000);
     } else {
       console.warn('Confetti canvas not found.');
     }
   });
 }
+
+window.addEventListener('keydown', (event) => {
+  if (event.key === 'F1') {
+    event.preventDefault();
+    window.location.href = 'index.html';
+  }
+});
